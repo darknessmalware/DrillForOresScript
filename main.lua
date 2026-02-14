@@ -2,14 +2,14 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
    Name = "Rayfield Example Window",
-   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
-   ShowText = "Rayfield", -- for mobile users to unhide Rayfield, change if you'd like
-   Theme = "DarkBlue", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+   Icon = 0,
+   ShowText = "Rayfield",
+   Theme = "DarkBlue",
 
-   ToggleUIKeybind = "K", -- The keybind to toggle the UI visibility (string like "K" or Enum.KeyCode)
+   ToggleUIKeybind = "K", -- The keybind to toggle the UI visibility
 
    DisableRayfieldPrompts = false,
-   DisableBuildWarnings = false -- Prevents Rayfield from emitting warnings when the script has a version mismatch with the interface.
+   DisableBuildWarnings = false
 })
 
 local DrillValue = false
@@ -33,14 +33,8 @@ local DrillToggle = Main:CreateToggle({
 				wait(0.005)
 			end
 		end
-			
-			--
-			--wait(0.1)
-
 	end,
 })
-
-
 
 local SellAllToggle = Shop:CreateToggle({
 	Name = "Sell All",
@@ -57,10 +51,3 @@ local SellAllToggle = Shop:CreateToggle({
 		end
 	end,
 })
-
---[[for loop = 1, 200 do
-
-	
-
-
-end ]]
